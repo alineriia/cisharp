@@ -17,15 +17,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Rectangle R1 = new Rectangle();
-            R1.Input();
-            R1.Output();
-            Circle C1 = new Circle();
-            C1.Input();
-            C1.Output();
-            Triangle T1 = new Triangle();
-            T1.Input();
-            T1.Output();
+            int n1, n2, n3;
+            Console.WriteLine("Enter num of Rectangle");
+            n1 = int.Parse(Console.ReadLine());
+            Rectangle[] r = new Rectangle[n1];
+            for (int i = 0; i < n1; i++)
+            {
+                r[i] = new Rectangle();
+                r[i].Input();
+                r[i].Output();
+            }
+            Console.WriteLine("Enter num of Circle");
+            n2 = int.Parse(Console.ReadLine());
+            Circle[] c = new Circle[n2];
+            for (int i = 0; i < n2; i++)
+            {
+                c[i] = new Circle();
+                c[i].Input();
+                c[i].Output();
+            }
+            Console.WriteLine("Enter num of Rectangle");
+            n3 = int.Parse(Console.ReadLine());
+            Triangle[] t = new Triangle[n3];
+            for (int i = 0; i < n3; i++)
+            {
+                t[i] = new Triangle();
+                t[i].Input();
+                t[i].Output();
+            }
 
             Console.ReadKey();
         }
